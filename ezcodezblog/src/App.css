@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F4F3F4;
+}
+.hide{
+    display: none;
+}
+.navigation{
+    width: 100%;
+    display: flex;
+    padding: 22px;
+    height: 128px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.nav-left{
+    width: 70%;
+    display: flex;
+}
+.sideBarMenue{
+    display: none;
+}
+.head{
+    width: 30%;
+    display: flex;
+   align-items: center;
+}
+.head h2{
+    font-family: 'Inter Tight';
+    user-select: none;
+    text-shadow: 1px 1px 14px black;
+}
+.navigation nav{
+    display: flex;
+    width: 70%;
+}
+.navigation nav ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.navigation nav ul li{
+    list-style: none;
+    padding: 22px;
+}
+.navigation nav ul li a{
+    color: #000;
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.right-btn{
+    width: 26%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.btn-main{
+    width: 62px;
+    height: 28px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px;
+}
+.btn{
+    width: 32px;
+    height: 100%;
+    border: 0;
+    outline: none;
+    border-radius: 100%;
+}
+.togglebtn{
+    width: 24px;
+    background-image: url('./Components/Images/sunny.png');
+    background-size: cover;
+    height: 24px;
+    border: 0;
+    border-radius: 100%;
+    position: absolute;
+    margin-left: -32px;
+    cursor: pointer;
+    transition: all ease .5s;
+}
+.togglebtn-2{
+    width: 24px;
+    background-image: url('./Components/Images/moon.png');
+    background-size: cover;
+    height: 24px;
+    border: 0;
+    border-radius: 100%;
+    position: absolute;
+    margin-left: 28px;
+    cursor: pointer;
+    transition: all ease .5s;
+}
+section{
+    height: 100%;
+    margin-top: 80px;
+}
+.blog-post-1{
+    display: flex;
+    height: 12rem;
+    margin: 40px;
+    margin-left: 0;
+    width: 60%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    align-items: center;
+    box-shadow: 1px 1px 10px;
+}
+.post-image{
+    width: 40%;
+    height: 100%;
+    border-radius: 8px;
+}
+.post-image img{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.post-text{
+    width: 59%;
+    margin-left: 1%;
+    height: 100%;
+    display: flex;
+    padding: 8px;
+    border-radius: 8px;
+}
+.text-gap{
+    margin: 0  12px;
+    text-transform: capitalize;
+}
+.fa-magnifying-glass{
+    font-size: 16px;
+    cursor: pointer;
+}
+.search-sec{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 90%;
+    margin: 0 5%;
+    top: 120px;
+}
+.search-box{
+    width: 90%;
+}
+.search-box input{
+    height: 4%;
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    background-color: white;
+    box-shadow: 1px 2px 10px 6px;
+}
+.markinbx{
+    position: absolute;
+    background: transparent;
+    cursor: pointer;
+    margin-left: -24px;
+    display: none;
+    margin-top: 16.2px;
+}
+.btnremover{
+    position: absolute;
+    top: 12px;
+    cursor: pointer;
+    right: 24px;
+    width: 12px;
+    display: none;
+    height: 12px;
+    background-image: url('./Components/Images/close.png');
+    background-size: cover;
+}
+.exbtnremover{
+    position: absolute;
+    top: 12px;
+    cursor: pointer;
+    right: 24px;
+    width: 12px;
+    display: block;
+    height: 12px;
+    background-image: url('./Components/Images/close.png');
+    background-size: cover;
+}
+/* Source Code Page */
+
+.row-lg{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.col-sm{
+    flex-basis: 28%;
+    height: 20rem;
+    margin: 2% 1.5%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px 1px;
+    border-radius: 8px;
+}
+.project-card{
+    width: 100%;
+    height: 40%;
+    display: block;
+    /* padding: 6px; */
+    /* padding-top: 2px; */
+    padding: 0;
+    padding-bottom: 8px;
+}
+.project-image{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 12px;
+}
+.project-image img{
+    width: 100%;
+    height: 100%;
+    -webkit-user-drag: none;
+    user-zoom: none;
+}
+.project-desc::-webkit-scrollbar{
+    width: 0;
+}
+.project-desc{
+    margin-top: 8px;
+    overflow-y: scroll;
+    height: 80px;
+    width: 100%;
+}
+.actions{
+    margin: 2% auto;
+    width: 80%;
+}
+.actions button{
+    border: 0;
+    outline: none;
+    margin: 4% 6%;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 100%;
+}
+.actions button i{
+    font-size: 1.5rem;
+}
+
+/* Contact Page CSS */
+.mysec{
+    margin-top: 20px;
+}
+.form-box{
+    width: 480px;
+    /* background-color: black; */
+    background-color: rgba(255, 255, 255, 0.418);
+    height: 512px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+.heading{
+    text-align: center;
+    margin-top: 28px;
+}
+@media (max-width:600px){
+    .head{
+        width: 50%;
+    }
+    .col-sm{
+        flex-basis: 100%;
+        background-color: #000000bd;
+        padding: 8px;
+    }
+    .project-card{
+        width: 100%;
+        height: 40%;
+        display: block;
+        /* padding: 6px;
+        padding-top: 2px;
+        padding-bottom: 8px; */
+        padding-left: 4px;
+    }
+    .nav-left{
+        width: 50%;
+        display: none;
+        justify-content: center;
+        background-color: #ffffffa8;
+        height: 480px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navigation nav{
+        display: block;
+        width: 100%;
+        background-color: transparent;
+    }
+    .navigation nav ul{
+        display: block;
+        width: 100%;
+        margin: 10% auto;
+        align-items: center;
+        background-color: transparent;
+    }
+    .navigation nav ul li{
+        list-style: none;
+        padding: 22px;
+        background-color: transparent;
+    }
+    .navigation nav ul li a{
+        background-color: transparent;
+    }
+    .right-btn{
+        width: 80%;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: transparent;
+        display: flex;
+        margin: auto;
+    }
+    .sideBarMenue{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    /* section{
+        display: none;
+    } */
+    .show{
+        display: block;
+        transition: all ease .5s;
+    }
+    .remove{
+        display: none;
+        transition: all ease .5s;
+    }
+    .btnremover{
+        display: block;
+    }
+    .blog-post-1{
+        display: flex;
+        height: 12rem;
+        margin: 40px auto;
+        width: 94%;
+        border-radius: 8px;
+        align-items: center;
+        box-shadow: 1px 1px 10px;
+    }
+    .post-text{
+        width: 59%;
+        margin-left: 1%;
+        height: 80%;
+        display: flex;
+        padding: 8px;
+        border-radius: 8px;
+        overflow-y: scroll;
+    }
+    .post-text::-webkit-scrollbar{
+        width: 0;
+    }
+    .search-box{
+        width: 90%;
+    }
+    .search-box input{
+        height: 2%;
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+        border: 0;
+        border-radius: 4px;
+        outline: none;
+        background-color: white;
+        box-shadow: 1px 2px 10px 6px;
+    }
+    .actions{
+        margin: 24% auto;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .actions button{
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        background: transparent;
+        border-radius: 100%;
+    }
+    .actions button i{
+        font-size: 1.5rem;
+        background-color: transparent;
+    }
+    .actions button span{
+        background-color: transparent;
+    }
+    .project-text{
+        background: transparent;
+    }
+    .project-tittle{
+        background-color: transparent;
+    }
+    .project-tittle h1{
+        background-color: transparent;
+        color: white;
+    }
+    .actions{
+        background-color: transparent;
+    }
+}
