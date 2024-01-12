@@ -36,7 +36,7 @@ const NavBar = () => {
         <div className={burger?'sideBarMenue':'hide'}>
             <i className="fa-solid fa-bars show" id="burger" onClick={SideBarShow}></i>
         </div>
-        <div className={showSideBar?'nav-left':'show'} id="SideBar">
+        <div className={showSideBar?'nav-left':'showSide'} id="SideBar">
             <i className="btnremover" onClick={SideBarRemove}></i>
             <nav>
                 <ul>

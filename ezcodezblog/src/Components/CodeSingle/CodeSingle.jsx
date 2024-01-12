@@ -13,7 +13,7 @@ const CodeSingle = () => {
                             </div>
                             <div class="actions">
                                 <button><i class="fa-brands fa-github"></i><br/><span>Get source Code</span></button>
-                                <button><i class="fa-regular fa-eye"></i><br/><span>View Result</span></button>
+                                <button><i class="fa-solid fa-code"></i><br/><span>Run</span></button>
                             </div>
                         </div>
                     </div>
