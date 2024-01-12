@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #F4F3F4;
+    transition: all ease .5s;
 }
 
 .hide {
