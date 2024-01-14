@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react'
 import {Link} from 'react-router-dom'
 
-const NavBar = () => {
-    let [btnclassName,setbtnclassName]= useState(false)
+const NavBar = ({click,mode}) => {
+    let [btnclassName,setbtnclassName]= useState(true)
     let [inputSearch,setinputSearch] = useState()
     let [showSearch,setsearch] = useState(true)
     let [showSideBar,setSideBar] = useState(true)
@@ -11,6 +11,7 @@ const NavBar = () => {
 
     let  btntoggle =() =>{
         setbtnclassName(!btnclassName)
+        click()
     }
     let inptclr = ()=>{
         console.log(inputSearch)
@@ -29,12 +30,12 @@ const NavBar = () => {
     }
   return (
     <div>
-        <div className="navigation">
-        <div className="head">
+        <div className={mode?'navigation':'navigationDark'}>
+        <div className={mode?'head':'headDark'}>
             <h2>EzCodez Blog</h2>
         </div>
         <div className={burger?'sideBarMenue':'hide'}>
-            <i className="fa-solid fa-bars show" id="burger" onClick={SideBarShow}></i>
+        <i className={mode?'fa-solid fa-bars show':'fa-solidDark fa-solid fa-bars show'} id="burger" onClick={SideBarShow}></i>
         </div>
         <div className={showSideBar?'nav-left':'showSide'} id="SideBar">
             <i className="btnremover" onClick={SideBarRemove}></i>
@@ -47,7 +48,7 @@ const NavBar = () => {
                 </ul>
             </nav>
             <div className="right-btn">
-                <div className="btn-main">
+                <div className={mode?'btn-main':'darkbtn-main'}>
                     <button className="btn" onClick={btntoggle}></button>
                     <button className={btnclassName?'togglebtn-2':'togglebtn'} id="btntoggle" onClick={btntoggle}></button>
                     <button className="btn" onClick={btntoggle}></button>
