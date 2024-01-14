@@ -6,6 +6,7 @@ const Contact = ({mode}) => {
         let form = new FormData(e.target)
         let data = Object.fromEntries(form)
         console.log(data)
+        alert('Messege Sent')
     }
     return (
         <div className={mode?'contactPage':'contactPageDark'}>

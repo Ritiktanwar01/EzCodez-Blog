@@ -13,7 +13,7 @@ html{
 .darkApp{
     background-color: black;
     height: 100%;
-    /* padding-bottom: 280px; */
+    padding-bottom: 120px;
 }
 
 body::-webkit-scrollbar{
