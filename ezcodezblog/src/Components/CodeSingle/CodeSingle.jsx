@@ -12,12 +12,12 @@ const CodeSingle = ({mode}) => {
             <h3>Ecomm</h3>
           </div>
           <div className="actions">
-           <button className='actionBtn' title='Github Repo'><i class="fa-brands fa-github"></i></button>
-           <button className='actionBtn' title='Run Code'><i class="fa-solid fa-code"></i></button>
+           <button className='actionBtn' title='Github Repo'><i className="fa-brands fa-github"></i></button>
+           <button className='actionBtn' title='Run Code'><i className="fa-solid fa-code"></i></button>
           </div>
           <div className="actions">
-           <button className='actionBtn' title='Zip File'><i class="fa-solid fa-file-zipper"></i></button>
-           <button className='actionBtn' title='Drive Link'><i class="fa-brands fa-google-drive"></i></button>
+           <button className='actionBtn' title='Zip File'><i className="fa-solid fa-file-zipper"></i></button>
+           <button className='actionBtn' title='Drive Link'><i className="fa-brands fa-google-drive"></i></button>
           </div>
         </div>
       </div>
