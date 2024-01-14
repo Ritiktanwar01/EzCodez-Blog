@@ -4,8 +4,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F4F3F4;
+    /* background-color: #F4F3F4; */
     transition: all ease .5s;
+}
+html{
+    height: 100%;
+}
+.darkApp{
+    background-color: black;
+    height: 100%;
+    /* padding-bottom: 280px; */
+}
+
+body::-webkit-scrollbar{
+    width: 0;
 }
 
 .hide {
@@ -13,6 +25,14 @@
 }
 
 .navigation {
+    width: 100%;
+    display: flex;
+    padding: 22px;
+    height: 128px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.navigationDark {
     width: 100%;
     display: flex;
     padding: 22px;
@@ -31,6 +51,18 @@
     display: none;
 }
 
+.headDark {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.headDark h2 {
+    font-family: 'Inter Tight';
+    user-select: none;
+    text-shadow: 1px 1px 14px wheat;
+    color: white;
+}
 .head {
     width: 30%;
     display: flex;
@@ -43,6 +75,36 @@
     text-shadow: 1px 1px 14px black;
 }
 
+.navigationDark nav {
+    display: flex;
+    width: 70%;
+}
+
+.navigationDark nav ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.navigationDark nav ul li {
+    list-style: none;
+    padding: 22px;
+}
+.navigationDark nav ul li {
+    list-style: none;
+    padding: 22px;
+    color: white;
+}
+
+.navigationDark nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 .navigation nav {
     display: flex;
     width: 70%;
@@ -83,7 +145,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 1px 10px;
+    box-shadow: 1px 1px 12px 8px wheat;
+}
+.darkbtn-main {
+    width: 62px;
+    height: 28px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 8px 4px beige;
+    background: white;
 }
 
 .btn {
@@ -91,12 +163,13 @@
     height: 100%;
     border: 0;
     outline: none;
+    background-color: transparent;
     border-radius: 100%;
 }
 
 .togglebtn {
     width: 24px;
-    background-image: url('./Components/Images/sunny.png');
+   background-image: url('./Components/Images/moon.png');
     background-size: cover;
     height: 24px;
     border: 0;
@@ -109,7 +182,7 @@
 
 .togglebtn-2 {
     width: 24px;
-    background-image: url('./Components/Images/moon.png');
+     background-image: url('./Components/Images/sunny.png');
     background-size: cover;
     height: 24px;
     border: 0;
@@ -160,7 +233,7 @@ section h2{
 .post-text {
     width: 99%;
     margin-left: 1%;
-    height: 50%;
+    height: 9.5rem;
     overflow-y: scroll;
     display: block;
     padding: 8px;
@@ -207,7 +280,7 @@ section h2{
     border-radius: 4px;
     outline: none;
     background-color: white;
-    box-shadow: 1px 2px 10px 6px;
+    box-shadow: 1px 1px 12px 8px wheat;
 }
 
 .markinbx {
@@ -252,12 +325,21 @@ section h2{
     padding: 2rem;
 }
 
+.col-sm-Dark {
+    flex-basis: 28%;
+    height: 20rem;
+    margin: 2% 1.5%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 12px 8px wheat;
+    border-radius: 8px;
+    background-color: white;
+}
 .col-sm {
     flex-basis: 28%;
     height: 20rem;
     margin: 2% 1.5%;
     box-sizing: border-box;
-    box-shadow: 1px 1px 2px 1px;
+    box-shadow: 1px 1px 12px 4px black;
     border-radius: 8px;
 }
 
@@ -281,23 +363,29 @@ section h2{
     width: 100%;
     height: 100%;
     -webkit-user-drag: none;
-    user-zoom: none;
+    border-radius: 4px;
+
 }
 
 .project-desc::-webkit-scrollbar {
     width: 0;
 }
+.project-tittle{
+    padding-left: 12px;
+}
 
 .project-desc {
     margin-top: 8px;
     overflow-y: scroll;
-    height: 80px;
+    height: 40px;
     width: 100%;
 }
 
 .actions {
-    margin: 2% auto;
-    width: 80%;
+    margin: 8% auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .actions button {
@@ -318,7 +406,7 @@ section h2{
     margin-top: 20px;
 }
 
-.form-box {
+.form-boxDark {
     width: 480px;
     /* background-color: black; */
     background-color: rgba(255, 255, 255, 0.418);
@@ -327,6 +415,50 @@ section h2{
     margin-bottom: 40px;
     border-radius: 8px;
 }
+.contactPageDark {
+    width: 60%;
+    height: 80%;
+    border: 1px solid black;
+    margin: 10% auto;
+    padding: 8px 12%;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px white;
+}
+
+.contactPageDark h2 {
+    text-align: center;
+    color: white;
+}
+
+.contactPageDark form {
+    width: 100%;
+    margin: 24px auto;
+}
+
+.contactPageDark form textarea {
+    width: 100%;
+    margin: 8px auto;
+    padding: 8px;
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contactPageDark form input {
+    width: 100%;
+    margin: 8px auto;
+    padding: 8px;
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 44px;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 28px;
+}
 .contactPage {
     width: 60%;
     height: 80%;
@@ -334,7 +466,7 @@ section h2{
     margin: 10% auto;
     padding: 8px 12%;
     border-radius: 8px;
-    box-shadow: 1px 1px 10px grey
+    box-shadow: 1px 1px 10px black;
 }
 
 .contactPage h2 {
@@ -363,6 +495,7 @@ section h2{
     outline: none;
     border-radius: 4px;
     cursor: pointer;
+    height: 44px;
 }
 
 .heading {
@@ -371,6 +504,18 @@ section h2{
 }
 
 @media (max-width:600px) {
+    .col-sm-Dark {
+        flex-basis: 100%;
+        height: 20rem;
+        margin: 8% 1.5%;
+        box-sizing: border-box;
+        box-shadow: 1px 1px 12px 8px wheat;
+        border-radius: 8px;
+        background-color: white;
+    }
+    .headDark {
+        width: 50%;
+    }
     .head {
         width: 50%;
     }
@@ -403,6 +548,32 @@ section h2{
         top: 0;
     }
 
+    .navigationDark nav {
+        display: block;
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    .navigationDark nav ul {
+        display: block;
+        width: 100%;
+        margin: 10% auto;
+        align-items: center;
+        background-color: #ffffff;
+    }
+
+    .navigationDark nav ul li {
+        list-style: none;
+        padding: 22px;
+        background-color: transparent;
+        color: #000;
+    }
+
+    .navigationDark nav ul li a {
+        background-color: transparent;
+        color: black;
+    }
+
     .navigation nav {
         display: block;
         width: 100%;
@@ -426,7 +597,25 @@ section h2{
     .navigation nav ul li a {
         background-color: transparent;
     }
-
+    .darkbtn-main {
+        width: 62px;
+        height: 28px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 1px 8px 4px black;
+        background: white;
+    }
+    .right-btn {
+        width: 80%;
+        align-items: center;
+        justify-content: flex-start;
+        box-shadow: 1px 1px 10px #ffffff;
+        display: flex;
+        margin: auto;
+        background-color: transparent;
+    }
     .right-btn {
         width: 80%;
         align-items: center;
@@ -442,6 +631,22 @@ section h2{
         display: flex;
         justify-content: flex-end;
         align-items: center;
+    }
+    .sideBarMenuesideBarMenueDark {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .fa-solidDark{
+        color: white;
+    }
+    .sideBarMenuesideBarMenueDark li{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: white;
     }
 
     /* section{
@@ -492,7 +697,7 @@ section h2{
     .post-text {
         width: 99%;
         margin-left: 1%;
-        height: 12rem;
+        height: 8rem;
         display: flex;
         padding: 18px;
         padding-bottom: 28px;
@@ -563,14 +768,47 @@ section h2{
         background-color: transparent;
     }
 
-    .contactPage {
+    .contactPageDark {
         width: 80%;
-        height: 80%;
+        height: 42%;
         border: 1px solid black;
-        margin: 10% auto;
+        margin: 0% auto;
+        bottom: 0;
         padding: 8px 12%;
         border-radius: 8px;
-        box-shadow: 1px 1px 10px grey
+        box-shadow: 1px 1px 10px grey;
+    }
+
+    .contactPageDark h2 {
+        text-align: center;
+        color: white;
+        background: transparent;
+    }
+
+    .contactPageDark form {
+        width: 100%;
+        margin: 24px auto;
+    }
+
+    .contactPageDark form input {
+        width: 100%;
+        margin: 8px auto;
+        padding: 8px;
+        height: 38px;
+        border: 1px solid grey;
+        outline: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .contactPage {
+        width: 80%;
+        height: 42%;
+        border: 1px solid black;
+        margin: 0% auto;
+        bottom: 0;
+        padding: 8px 12%;
+        border-radius: 8px;
+        box-shadow: 1px 1px 10px grey;
     }
 
     .contactPage h2 {
@@ -586,9 +824,15 @@ section h2{
         width: 100%;
         margin: 8px auto;
         padding: 8px;
+        height: 38px;
         border: 1px solid grey;
         outline: none;
         border-radius: 4px;
         cursor: pointer;
+    }
+    .darkApp{
+        background-color: black;
+        height: 100%;
+        padding-bottom: 280px;
     }
 }

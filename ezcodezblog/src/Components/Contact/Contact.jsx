@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Contact = () => {
+const Contact = ({mode}) => {
     let sendFormData = (e) =>{
         e.preventDefault()
         let form = new FormData(e.target)
@@ -8,7 +8,7 @@ const Contact = () => {
         console.log(data)
     }
     return (
-        <div className='contactPage'>
+        <div className={mode?'contactPage':'contactPageDark'}>
             <h2>Contact us</h2>
             <div className="form">
                 <form onSubmit={(e)=>sendFormData(e)}>

@@ -1,33 +1,31 @@
 import React from 'react'
 import BlogSingle from '../BlogSingle/BlogSingle'
 
-export const Blog = () => {
+export const Blog = ({mode}) => {
   return (
-    <section>
-    <h2>Latest Blog</h2>
-    <div className="blogs">
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-      <BlogSingle />
-    </div>
-</section>
+    <div className="table-projects">
+            <div className="row-lg">
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                <BlogSingle mode={mode}/>
+                
+            </div>
+        </div>
   )
 }

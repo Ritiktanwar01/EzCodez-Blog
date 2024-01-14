@@ -1,32 +1,32 @@
 import React from 'react'
 import CodeSingle from '../CodeSingle/CodeSingle'
 
-const CodeSection = () => {
+const CodeSection = ({mode}) => {
   return (
-    <div class="table-projects">
-            <div class="row-lg">
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
-                <CodeSingle />
+    <div className="table-projects">
+            <div className="row-lg">
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
+                <CodeSingle mode={mode}/>
             </div>
         </div>
   )
