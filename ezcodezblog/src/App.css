@@ -24,7 +24,7 @@
 .nav-left {
     width: 70%;
     display: flex;
-    background-color: white;
+
 }
 
 .sideBarMenue {
@@ -124,22 +124,27 @@ section {
     height: 100%;
     margin-top: 80px;
 }
+section h2{
+    margin-left: 2rem;
+}
 
 .blog-post-1 {
-    display: flex;
-    height: 12rem;
-    margin: 40px;
-    margin-left: 0;
-    width: 74%;
-    border-top-right-radius: 8px;
+    display: block;
+    height: 28rem;
+    margin: 4% auto;
+    /* margin: 40px;
+    margin-left: 0; */
+    width: 70%;
+    /* border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    align-items: center;
+    align-items: center; */
+    border-radius: 8px;
     box-shadow: 1px 1px 10px;
 }
 
 .post-image {
-    width: 40%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     border-radius: 8px;
 }
 
@@ -153,11 +158,11 @@ section {
 }
 
 .post-text {
-    width: 59%;
+    width: 99%;
     margin-left: 1%;
-    height: 60%;
+    height: 50%;
     overflow-y: scroll;
-    display: flex;
+    display: block;
     padding: 8px;
     border-radius: 8px;
 }
@@ -166,10 +171,10 @@ section {
     width: 0;
 }
 
-.text-gap {
+/* .text-gap {
     margin: 0 12px;
     text-transform: capitalize;
-}
+} */
 
 .fa-magnifying-glass {
     font-size: 16px;
@@ -322,6 +327,43 @@ section {
     margin-bottom: 40px;
     border-radius: 8px;
 }
+.contactPage {
+    width: 60%;
+    height: 80%;
+    border: 1px solid black;
+    margin: 10% auto;
+    padding: 8px 12%;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px grey
+}
+
+.contactPage h2 {
+    text-align: center;
+}
+
+.contactPage form {
+    width: 100%;
+    margin: 24px auto;
+}
+
+.contactPage form textarea {
+    width: 100%;
+    margin: 8px auto;
+    padding: 8px;
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contactPage form input {
+    width: 100%;
+    margin: 8px auto;
+    padding: 8px;
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 .heading {
     text-align: center;
@@ -335,8 +377,9 @@ section {
 
     .col-sm {
         flex-basis: 100%;
-        background-color: #000000bd;
+        background-color:#F4F3F4;
         padding: 8px;
+        border-radius: 8px;
     }
 
     .project-card {
@@ -429,21 +472,30 @@ section {
     }
 
     .blog-post-1 {
-        display: flex;
-        height: 12rem;
+        display: block;
+        height: 100%;
         margin: 40px auto;
         width: 94%;
         border-radius: 8px;
         align-items: center;
         box-shadow: 1px 1px 10px;
     }
+    .post-image{
+        height: 40%;
+        width: 100%;
+    }
+    .post-image img{
+        height: 100%;
+        width: 100%;
+    }
 
     .post-text {
-        width: 59%;
+        width: 99%;
         margin-left: 1%;
-        height: 80%;
+        height: 12rem;
         display: flex;
-        padding: 8px;
+        padding: 18px;
+        padding-bottom: 28px;
         border-radius: 8px;
         overflow-y: scroll;
     }
@@ -469,16 +521,17 @@ section {
     }
 
     .actions {
-        margin: 24% auto;
-        width: 80%;
+        margin: 8% auto;
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
     }
 
     .actions button {
         border: 0;
         outline: none;
+        width: 40%;
         cursor: pointer;
         background: transparent;
         border-radius: 100%;
@@ -503,7 +556,7 @@ section {
 
     .project-tittle h1 {
         background-color: transparent;
-        color: white;
+        color: black;
     }
 
     .actions {

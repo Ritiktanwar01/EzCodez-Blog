@@ -9,7 +9,7 @@ const Contact = () => {
     }
     return (
         <div className='contactPage'>
-            <h2>Contact</h2>
+            <h2>Contact us</h2>
             <div className="form">
                 <form onSubmit={(e)=>sendFormData(e)}>
                     <input type="text" placeholder='Name' name='name' id='name'/>
