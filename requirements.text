@@ -1,0 +1,5 @@
+backend requirements to run this project =>
+
+1. python,
+2. pillow, 
+3. django
