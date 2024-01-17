@@ -10,7 +10,7 @@ const Blog = (props) => {
   axios.get(url).then((response)=>{
     setBlog(response.data.data)
   })
-  },[])
+  },[url])
   return (
     <div className="table-projects">
             <div className="row-lg">

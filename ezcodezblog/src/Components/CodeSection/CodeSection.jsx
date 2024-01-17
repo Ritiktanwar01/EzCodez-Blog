@@ -10,7 +10,7 @@ const CodeSection = (props) => {
   axios.get(url).then((response)=>{
     setcodes(response.data.data)
   })
-  },[])
+  },[url])
   return (
     <div className="table-projects">
             <div className="row-lg">
