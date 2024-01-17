@@ -238,6 +238,7 @@ section h2{
     display: block;
     padding: 8px;
     border-radius: 8px;
+    word-wrap: break-word;
 }
 
 .post-text::-webkit-scrollbar {
@@ -753,10 +754,12 @@ section h2{
 
     .project-text {
         background: transparent;
+        word-wrap: break-word;
     }
 
     .project-tittle {
         background-color: transparent;
+        width: 100%;
     }
 
     .project-tittle h1 {
@@ -832,7 +835,7 @@ section h2{
     }
     .darkApp{
         background-color: black;
-        height: 100%;
+        min-height: 100vh;
         padding-bottom: 280px;
     }
 }

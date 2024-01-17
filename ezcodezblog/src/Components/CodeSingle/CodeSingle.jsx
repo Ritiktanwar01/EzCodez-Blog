@@ -1,23 +1,23 @@
 import React from 'react'
 
-const CodeSingle = ({mode}) => {
+const CodeSingle = (props) => {
   return (
-    <div className={mode?'col-sm':'col-sm-Dark'}>
+    <div className={props.mode?'col-sm':'col-sm-Dark'}>
       <div className="project-card">
         <div className="project-image">
-          <img src="https://th.bing.com/th?id=ORMS.61d5f13c7c67821ddfdce1d52efab0d0&pid=Wdp&w=612&h=304&qlt=90&c=1&rs=1&dpr=1&p=0" alt="" />
+          <img src={'http://127.0.0.1:8000/'+props.image} alt="" />
         </div>
         <div className="project-text">
           <div className="project-tittle">
-            <h3>Ecomm</h3>
+            <h3>{props.tittle}</h3>
           </div>
           <div className="actions">
-           <button className='actionBtn' title='Github Repo'><i className="fa-brands fa-github"></i></button>
-           <button className='actionBtn' title='Run Code'><i className="fa-solid fa-code"></i></button>
+           <button className='actionBtn' title='Github Repo'><a href={props.githublink}><i className="fa-brands fa-github"></i></a></button>
+           <button className='actionBtn' title='Run Code'><a href={'/'}><i className="fa-solid fa-code"></i></a></button>
           </div>
           <div className="actions">
-           <button className='actionBtn' title='Zip File'><i className="fa-solid fa-file-zipper"></i></button>
-           <button className='actionBtn' title='Drive Link'><i className="fa-brands fa-google-drive"></i></button>
+           <button className='actionBtn' title='Zip File'><a href={props.ziplink}><i className="fa-solid fa-file-zipper"></i></a></button>
+           <button className='actionBtn' title='Drive Link'><a href={props.drivelink}><i className="fa-brands fa-google-drive"></i></a></button>
           </div>
         </div>
       </div>
